@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
+	"strings"
 )
 
 func main() {
@@ -141,6 +142,19 @@ func main() {
     // Use the function from the map
     result2 := operations["add"](3, 5)
 	fmt.Println(result2);
+
+
+	// STRINGS IN GO LANG!
+	message := "String is here";
+	fmt.Println("message: ", message);
+	// STRING LENGTH!
+	fmt.Println("message length: ", len(message));
+	// STRING CONCATENATION!
+	fmt.Println("message + concatenated: ", message + " concatenated");
+	// STRING INDEXING!
+	fmt.Println("message[0]: ", message[0]);
+	// STRING UPPERCASE!
+	fmt.Println("message to uppercase: ", strings.ToUpper(message))
 
 }
 
